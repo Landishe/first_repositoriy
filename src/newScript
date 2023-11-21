@@ -1,0 +1,51 @@
+function addMessage(event) { 
+    event.preventDefault(); 
+
+    // получаем конечный вариант автора 
+    let author = newViewAuthor.innerText;
+    newAuthor = document.createElement('h2');  
+    newAuthor.className = 'form__author__bubble';
+    newAuthor.innerText = author;
+    authorDone.appendChild(newAuthor);
+
+    // получаем конечный вариант заголовка
+    let title = newTitleView.innerText;
+    newTitle = document.createElement('p'); 
+    newTitle.className = 'form__title__bubble';
+    newTitle.innerText = title;
+    titleDone.appendChild(newTitle);
+
+    // получаем конечный вариант текста       
+    let message = newViewText.innerText;
+    newMessage = document.createElement('h2'); 
+    newMessage.className = 'form__message__bubble';
+    newMessage.innerText = message;
+    textDone.appendChild(newMessage);     
+
+    // Создаем документ "workMessage.html" в новой вкладке браузера 
+    let newWindow = window.open('workMessage.html'); 
+
+    // Передаем данные в созданный документ 
+    newWindow.onload = function () { 
+        let authorElement = newWindow.document.createElement('h3');
+        authorElement.innerText = newAuthor.innerText;
+        newWindow.document.newTitle.appendChild(authorElement);
+
+        let titleElement = newWindow.document.createElement('h2');
+        titleElement.innerText = newTitle.innerText;
+        newWindow.document.titleDone.appendChild(titleElement);
+
+        let messageElement = newWindow.document.createElement('p');
+        messageElement.innerText = newMessage.innerText;
+        newWindow.document.textDone.appendChild(messageElement);
+    }
+
+    // Очищаем поля и удаляем предварительный просмотр 
+    preViewTitle.innerHTML = '';
+    preViewText.innerHTML = '';
+    buttonSend.innerHTML = '';
+    preViewAuthor.innerHTML = '';
+    inputAuthor.value = '';
+    inputTitle.value = '';
+    inputText.value = '';
+}

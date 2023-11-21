@@ -1,0 +1,15 @@
+@import url("form.css");
+@import url("pseudo-element.css");
+@import url("workMessage.css");
+
+
+.body{
+    margin: 0px auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 15px auto;
+}

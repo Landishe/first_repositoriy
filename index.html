@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/ress.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="form">
+        <div class="container">
+            <div class="form__content">
+                <form class= "form" action="">
+                    <p class="form__author">Автор</p>
+                    <input class="form__input__author" type="text" placeholder="Введите ваше имя">
+                    <p class="form__author"> Заголовок</p>
+                    <input class="form__input__title" type="text"  placeholder="Введите заголовок" >
+                    <p class="form__text">Текст сообщения</p>
+                    <textarea name="text" class="form__input__text" placeholder="Введите ваше сообщение" cols="30" rows="10"></textarea>
+                    <button type="submit" class="button__preview">Предпросмотр</button>
+                </form>
+            <div class="form__story">
+                <div class="message__title__bubble"></div>
+                <div class="message__author__bubble"></div>
+                <div class="message__text__bubble"></div>
+            </div>
+            </div>
+            <div class="form__preview">
+                <div class="preview__title__bubble"></div>
+                <div class="preview__author__bubble"></div>
+                <div class="preview__text__bubble"></div>
+                <div class="send__form__buttons"></div>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="module" src="./src/script.js"></script>
+</html>

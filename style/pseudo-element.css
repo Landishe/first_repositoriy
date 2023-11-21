@@ -1,0 +1,42 @@
+
+.form__preview__title{
+    display: flex;
+    margin: 18px 0 0px 10px;
+    width: 500px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px 5px 0 0;
+    font-weight: 700
+}
+
+.form__preview__author {
+    display: flex;
+    padding-top: 10px;
+    margin: 0 0 10px 10px;
+    width: 500px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 0 0 5px 5px;
+    font-weight: 500;
+}
+
+.form__preview__text {
+    display: flex;
+    
+    margin: 0 0 0 10px;
+    width: 500px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 0 0 5px 5px;
+}
+.form__message__bubble__error{
+    display: flex;
+    margin: 10px 0;
+    width: 500px;
+    background-color: rgb(231, 39, 39);
+    border-radius: 5px;
+}
+.form__preview__text__error{
+    display: flex;
+        margin: 10px 0;
+        width: 500px;
+        background-color: rgb(231, 39, 39);
+        border-radius: 5px;
+}
